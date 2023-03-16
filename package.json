@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap4-youtube",
+  "version": "1.0.0",
+  "description": "Curso de Bootstrap4 com SAAS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compiler"
+  },
+  "keywords": [
+    "sass",
+    "bootstrap4",
+    "css",
+    "npm"
+  ],
+  "author": "Vini Santos",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "bootstrap-icons": "^1.10.3",
+    "jquery": "^3.6.3",
+    "popper.js": "^1.16.1"
+  }
+}

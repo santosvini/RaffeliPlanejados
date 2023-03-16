@@ -1,0 +1,34 @@
+body {
+  padding-top: 72px;
+}
+
+.text-brown {
+  color: #402F25;
+}
+
+.text-title {
+  color: #8C593B;
+}
+
+.bg-brown {
+  background-color: #A66724;
+}
+
+/* 
+#74481A 
+
+#48220F
+*/
+
+ul > li > a, .text-footer, .text-carousel {
+  color: #F2DFBB;
+}
+
+ul > li > a:hover {
+  color: #F2DFBB;
+  text-decoration: none;
+}
+
+#beneficios p {
+  line-height: 2em;
+}
