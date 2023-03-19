@@ -11,7 +11,7 @@ body {
 }
 
 .bg-brown {
-  background-color: #A66724;
+  background-color: #74481A;
 }
 
 /* 
@@ -20,8 +20,13 @@ body {
 #48220F
 */
 
-ul > li > a, .text-footer, .text-carousel {
+ul > li > a, .text-footer {
   color: #F2DFBB;
+}
+
+.text-carousel {
+  font: italic 3rem Verdana, arial, helvetica, sans-serif;
+  color: #ccc;
 }
 
 ul > li > a:hover {
@@ -31,4 +36,16 @@ ul > li > a:hover {
 
 #beneficios p {
   line-height: 2em;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0px;
+  }
+  .fixed-top {
+    position: relative;
+  }
+  h3.display-4 {
+    color: #ccc;
+  }
 }

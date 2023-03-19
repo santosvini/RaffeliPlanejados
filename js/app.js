@@ -2,15 +2,40 @@ $('.carousel').carousel({
   interval: 2000
 })
 
-function Enviar() {
-  var name = document.getElementById('name')
-  var number = document.getElementById('number')
-  var email = document.getElementById('email')
-  var address = document.getElementById('address')
-  var codeZip = document.getElementById('codeZip')
-  var textarea = document.getElementById('validationTextarea')
+const form = document.querySelector('#form')
+const name = document.querySelector('#name')
+const number = document.querySelector('#number')
+const email = document.querySelector('#email')
+const address = document.querySelector('#address')
+const codeZip = document.querySelector('#codeZip')
+const textarea = document.querySelector('#validationTextarea')
 
-  if(name.value && number.value && email.value && address.value && codeZip.value && textarea.value != "") {
-    alert("Obrigado Sr(a) " + name.value + " os seus dados foram enviados e logo entraremos em contato!")
-  } 
-}
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+
+  if (name.value === "") {
+    alert('Favor, preencha o nome')
+    return; 
+  }
+  if (number.value === "") {
+    alert('Favor, preencha o celular')
+    return; 
+  }
+  if (email.value === "") {
+    alert('Favor, preencha o email')
+    return; 
+  }
+  if (address.value === "") {
+    alert('Favor, preencha o endereço')
+    return; 
+  }
+  if (codeZip.value === "") {
+    alert('Favor, preencha o cep')
+    return; 
+  }
+  if (textarea.value === "") {
+    alert('Favor, preencha o seu projeto')
+    return; 
+  }
+  form.submit();
+});

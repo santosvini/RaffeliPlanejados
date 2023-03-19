@@ -43,7 +43,7 @@
     <div class="container">
       <div class="my-3">
         <span class="h6 text-secondary mb-3">O melhor planejado de São José dos Campos</span>
-        <h2 class="h5 display-4">FALE CONOSCO</h2>
+        <h2 class="h1 mt-3 text-brown">FALE CONOSCO</h2>
       </div>
     </div>
   </section>
@@ -51,39 +51,46 @@
   <section class="container">
     <div class="row bg-light mt-0">
       <div class="col-lg-6">
-        <form class="p-4" action="get" method="post">
+        <form action="https://formsubmit.co/rafael.2lima@hotmail.com" method="POST" class="p-4" id="form" data-toggle="validator" novalidate="true">
+          
+          <input type="hidden" name="_next" value="https://raffeliplanejados.vercel.app/index.html">
+
+          <input type="hidden" name="_autoresponse" value="Recebemos a sua mensagem, entraremos em contato">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
+
           <div class="form-group ">
-            <label for="inputEmail4">Nome</label>
-            <input type="text" class="form-control" id="name" required>
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" name="name" placeholder="Nome Completo" id="name" required>
           </div>
 
           <div class="form-group">
-            <label for="inputEmail4">Celular</label>
-            <input type="text" class="form-control" id="number" placeholder="(99)99999-9999" required>
+            <label for="number">Celular</label>
+            <input type="text" class="form-control" name="number" id="number" placeholder="(99)99999-9999" maxlength="15" required>
           </div>
 
           <div class="form-group">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="email" >
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
           </div>
 
           <div class="form-group">
-            <label for="inputAddress">Endereço</label>
-            <input type="text" class="form-control" id="address" placeholder="Rua, Av, Trav." >
+            <label for="address">Endereço</label>
+            <input type="text" class="form-control" name="address" id="address" placeholder="Rua, Av, Trav." required>
           </div>
         
           <div class="form-group">
-            <label for="inputZip">CEP</label>
-            <input type="text" class="form-control" id="codeZip"
-            placeholder="00000-000" >
+            <label for="codeZip">CEP</label>
+            <input type="text" class="form-control" name="codeZip" id="codeZip"
+            placeholder="00000-000" required>
           </div>
 
           <div class="form-group">
             <label for="validationTextarea">Mensagem:</label>
-            <textarea class="form-control" id="validationTextarea" placeholder="Descreva seu projeto!" required></textarea>
+            <textarea class="form-control" name="textarea" id="validationTextarea" placeholder="Descreva seu projeto!" required></textarea>
           </div>
 
-          <button type="submit" class="btn btn-outline-secondary" onclick="Enviar()">Enviar</button>
+          <button type="submit" class="btn btn-outline-secondary" >Enviar</button>
 
         </form>
       </div>
@@ -94,7 +101,7 @@
           <li class="text-brown font-weight-bold pt-2">Planejista & Marceneiro - Rafael Lima</li>
           <li>Telefone: (12) 98248-5174</li>
           <li class="text-brown font-weight-bold pt-2">Horário: De Seg. à Sex. das 8h às 18h</li>
-          <li>Atendimento: São Paulo & Região / Vale do Paraíba</li>
+          <li>Atendimento: São José dos Campos, São Paulo capital e região</li>
           <li>
             <img src="img/RAFFELI-removebg-preview.png" alt="Logo RaffeliPlanejados" class="img-fluid d-flex mt-3" style="width: 180px;">
           </li>
@@ -111,7 +118,7 @@
           <ul class="list-unstyled text-footer">
             <li>Telefone: (12) 98248-5174</li>
             <li>Horário: De Seg. à Sex. das 8h às 18h</li>
-            <li>Atendimento: São Paulo e Região</li>
+            <li>Atendimento: São José dos Campos, São Paulo capital e região</li>
           </ul>
         </div>
 
@@ -129,12 +136,12 @@
           <ul class="list-unstyled">
             <li>
               <a href="https://www.instagram.com/raffeliplanejados/" target="_blank">
-                <img src="node_modules/bootstrap-icons/icons/instagram.svg" alt="Instagram" class="btn btn-light btn-sm mb-2">
+                <img src="icons/instagram.svg" alt="Instagram" class="btn btn-light btn-sm mb-2">
               </a>
             </li>
             <li>
-              <a href="https://api.whatsapp.com/send?phone=5512981042380&text=Ola%2C%20gostaria%20de%20um%20atendimento%20por%20gentileza" target="_blank">
-                <img src="node_modules/bootstrap-icons/icons/whatsapp.svg" alt="WhatsApp" class="btn btn-light btn-sm mb-2">
+              <a href="https://api.whatsapp.com/send?phone=5512982485174&text=Ola%2C%20gostaria%20de%20um%20atendimento%20por%20gentileza" target="_blank">
+                <img src="icons/whatsapp.svg" alt="WhatsApp" class="btn btn-light btn-sm mb-2">
               </a>
             </li>
           </ul>
@@ -143,15 +150,15 @@
       </div>
     </div>
     <div class="bg-brown text-center text-white py-3">
-      <p class="mb-0">&copy VIUSTech 2023. All rights reserved</p>
+        <p class="mb-0">&copy <a href="https://santosvini.github.io/" target="_blank" class="text-white">VIUSTech 2023.</a> All rights reserved</p>
     </div>
   </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="js/jquery.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/popper.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
