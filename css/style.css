@@ -14,19 +14,13 @@ body {
   background-color: #74481A;
 }
 
-/* 
-#74481A 
-
-#48220F
-*/
-
 ul > li > a, .text-footer {
   color: #F2DFBB;
 }
 
 .text-carousel {
   font: italic 3rem Verdana, arial, helvetica, sans-serif;
-  color: #ccc;
+  color: #D8D067;
 }
 
 ul > li > a:hover {
@@ -46,6 +40,6 @@ ul > li > a:hover {
     position: relative;
   }
   h3.display-4 {
-    color: #ccc;
+    color: #D8D067;
   }
 }
