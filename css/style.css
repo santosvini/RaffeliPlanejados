@@ -1,5 +1,14 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
-  padding-top: 72px;
+  padding-top: 0px;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+              0 4px 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 .text-brown {
